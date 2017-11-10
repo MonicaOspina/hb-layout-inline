@@ -1,97 +1,98 @@
 h1{
-    color: blueviolet; 
+    color: black; 
  }
  *{
-     margin:0 ;
-     padding: 0 ;
-     box-sizing: border-box
- }
+    margin:0 ;
+    padding: 0 ;
+    box-sizing: border-box
+}
  
- .container{
-     max-width: 1024px;
-     width: 100%;
-     margin: 0 auto;
- }
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
  
- header{
-     position: fixed;
-     top: 0;
-     max-width:1024px;
-     width: 100%;
-     height: 80px;
-     text-align: center;
-     background-color: gray;   
- }
+header{
+    position: fixed;
+    top: 0;
+    max-width:1024px;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background-color: gray; 
+    border: 1px solid #000000;  
+}
    
- .twoboxes{
-     width: 100%;
-     margin-top: 100px;
-     font-size: 0px;   
- }
+.twoboxes{
+    width: 100%;
+    margin-top: 100px;
+    font-size: 0px;   
+}
 
- .izbox, .derbox { 
-     display: inline-block;
-     height: 300px;
-     margin-right: 20px;
-     width: calc(50% - 10px);  
- }
+.box-two{ 
+    display: inline-block;
+    height: 300px;
+    margin-right: 20px;
+    width: calc(50% - 10px);
+    border: 1px solid #000000;  
+}
 
- .derbox { 
-     margin-right: 0px;  
- }
+.box-two:last-child{ 
+    margin-right: 0px;  
+}
  
- .threeboxes {
-     width: 100%;
-     margin-top: 20px;
-     font-size: 0px;
- } 
+.threeboxes {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 0px;
+}  
  
- .boxiz, .boxcent, .boxder{
-     height: 120px;
-     width: calc(100%/3 - 40px/3);
-     display: inline-block;
- }
+.box-three{
+    height: 120px;
+    width: calc(100%/3 - 40px/3);
+    display: inline-block;
+    border: 1px solid #000000;
+    margin-right:20px; 
+}
 
- .boxiz{
-     margin-right: 10px;
- }
- .boxcent{
-     margin-right: 10px;
-     margin-left: 10px;
- }
- .boxder{
-     margin-left: 10px;
- }
+.box-three:last-child{
+    margin-right: 0px;
+}
  
- article{
-     background-color: gray;
- }
+article{
+    background-color: gray;
+}
  
- .bottom{
-       height: 200px;
-       margin-top: 20px;
-       width: 100%;
-       background-color: gray;
-       position: relative;
- } 
+.bottom{
+    height: 200px;
+    margin-top: 20px;
+    width: 100%;
+    background-color: gray;
+    position: relative;
+    border: 1px solid #000000;
+} 
  
- .bottom article{
-     width:150px;
-     height:150px ;
-     background-color: gray;
-     border: 1px solid #000000;
-     position: absolute;  
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
- } 
+.bottom article{
+    width:150px;
+    height:150px ;
+    background-color: gray;
+    border: 1px solid #000000;
+    position: absolute;  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
  
-  @media(max-width:500px){
-     
-     .izbox, .derbox, .boxcent, .boxder, .boxiz{
-         margin-bottom: 20px;
-         width: 100%;
-         margin-left: 0;
-     }
-  }
+@media(max-width:500px){
+    .box-two, .box-three{
+        /* margin-right: 0;
+        margin-bottom: 20px; */
+        margin: 0 0 20px;
+        width: 100%;
+    }
+    .threeboxes, .bottom{
+        margin-top: 0;
+    }
+}
    
